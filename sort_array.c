@@ -23,17 +23,3 @@ void sort_red(float* values, size_t count)
 }
 
 
-int main(void)
-{
-    float fs[] = {1.5, -2.6, 4.3, 99462};
-    size_t count = sizeof(fs) / sizeof(float);
-
-    sort_red(fs, count);
-
-    // Print sorted array
-    for (size_t i = 0; i < count; i++) {
-        printf("%f\n", fs[i]);
-    }
-
-    return 0;
-}
