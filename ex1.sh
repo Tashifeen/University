@@ -1,78 +1,72 @@
-#!/bin/bash
-# ex1.sh — Convert a simple students.xml -> students.csv
-# Usage: ./ex1.sh students.xml [students.csv]
-
+#!/usr/bin/env bash
 set -euo pipefail
 
-# 1) Args
-if [[ $# -lt 1 ]]; then
-  echo "Usage: $0 <input.xml> [output.csv]"
+# Usage: ./ex1.sh input.xml output.csv
+in="${1:-}"
+out="${2:-}"
+
+if [[ -z "$in" || -z "$out" ]]; then
+  echo "Usage: $0 input.xml output.csv" >&2
   exit 1
 fi
 
-input_xml="$1"
-output_csv="${2:-${input_xml%.xml}.csv}"
-
-if [[ ! -f "$input_xml" ]]; then
-  echo "Input file not found: $input_xml"
+if [[ ! -f "$in" ]]; then
+  echo "Error: input file not found: $in" >&2
   exit 1
 fi
 
-# 2) Build a unique, comma-separated header of child tag names that look like <tag>text</tag>
-#    - Excludes root/container tags like 'students' and XML declaration
-#    - Requires GNU grep (-P)
-tags="$(
-  grep -oP '<\K[^/][^>]*(?=>[^<]+</[^>]+>)' "$input_xml" \
-    | grep -vP '^(students|\?xml)$' \
-    | sort -u \
-    | paste -sd,
-)"
+python3 - "$in" "$out" <<'PY'
+import sys, csv
+import xml.etree.ElementTree as ET
 
-if [[ -z "$tags" ]]; then
-  echo "No simple <tag>text</tag> elements found in $input_xml"
-  exit 1
-fi
+in_path = sys.argv[1]
+out_path = sys.argv[2]
 
-# 3) Write header
-echo "$tags" > "$output_csv"
+tree = ET.parse(in_path)
+root = tree.getroot()
 
-# 4) Stream students into rows
-#    - Extract values from each <student> ... </student> block
-#    - Output columns in the order given by $tags
-awk -v tags="$tags" '
-BEGIN {
-  FS = "[<>]"
-  OFS = ","
-  n = split(tags, header, /,/)
-  for (i=1; i<=n; i++) gsub(/^ +| +$/, "", header[i])   # trim spaces in header names
-}
+# Records are the direct children under the root, e.g. <student>...</student> or <faculty>...</faculty>
+records = list(root)
+if not records:
+    # Write empty output with no header if no records
+    open(out_path, "w", newline="", encoding="utf-8").close()
+    sys.exit(0)
 
-# Process only within <student> ... </student>
-/<student>/,/<\/student>/ {
+# Header: use the first record's child tags in order, then add any new tags seen later (in first-seen order)
+header = []
+seen = set()
 
-  # For a line like: <name>Alice</name>
-  #   $2 = name
-  #   $3 = Alice
-  # guard against empty $2/$3 and skip container/open/close markers
-  if ($2 ~ /^[A-Za-z0-9_:-]+$/ && $3 != "" && $0 !~ /<\/?student>/) {
-    values[$2] = $3
-  }
+def add_field(tag):
+    if tag not in seen:
+        seen.add(tag)
+        header.append(tag)
 
-  # When we reach the end of a student block, print a row
-  if ($0 ~ /<\/student>/) {
-    for (i=1; i<=n; i++) {
-      key = header[i]
-      out = (key in values ? values[key] : "")
-      # escape any embedded quotes by doubling them, wrap in quotes if containing comma or quote
-      gsub(/"/, "\"\"", out)
-      if (out ~ /[,"]/)
-        printf "\"%s\"%s", out, (i<n ? OFS : ORS)
-      else
-        printf "%s%s", out, (i<n ? OFS : ORS)
-    }
-    delete values
-  }
-}
-' "$input_xml" >> "$output_csv"
+# Get initial header order from first record
+for child in list(records[0]):
+    add_field(child.tag)
 
-echo "CSV generated: $output_csv"
+# Add any extra fields found in other records
+for rec in records[1:]:
+    for child in list(rec):
+        add_field(child.tag)
+
+def clean_text(x):
+    if x is None:
+        return ""
+    # Collapse internal whitespace/newlines to spaces
+    return " ".join(x.split())
+
+with open(out_path, "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f, quoting=csv.QUOTE_ALL)
+
+    # header row
+    w.writerow(header)
+
+    # data rows
+    for rec in records:
+        row = []
+        for tag in header:
+            elem = rec.find(tag)
+            row.append(clean_text(elem.text) if elem is not None else "")
+        w.writerow(row)
+PY
