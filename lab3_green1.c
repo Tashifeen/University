@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void replace_alice(const char *infile const char *outfile, const char *fullname) {
+void replace_alice(const char *infile, const char *outfile, const char *fullname) {
 	FILE *in = fopen(infile, "r");
 	FILE *out = fopen(outfile, "w");
 
@@ -44,3 +44,9 @@ void replace_alice(const char *infile const char *outfile, const char *fullname)
     fclose(out);
 }
 
+int main(void) {
+    replace_alice("alice.txt",
+                  "alice_replaced.txt",
+                  "Tashifeen Ahmad");
+    return 0;
+}
