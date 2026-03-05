@@ -7,7 +7,7 @@
 xml="$1"
 csv="$2"
 
-# Checks if (input) arguments are missing
+# Checks if (input) arguments are missing (https://linuxsimply.com/bash-scripting-tutorial/conditional-statements/if-else/if-string-not-empty/)
 if [ -z "$xml" ] || [ -z "$csv" ]; then
     echo "Usage: $0 input.xml output.csv"	# -z -> string is empty
     exit 1
