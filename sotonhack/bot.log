@@ -1,0 +1,19 @@
+20:52:48 [94mTRACE[0m [90mdiscord-rest_ratelimit.c:252:[0m [DISCORD_RATELIMIT] [null] Couldn't match known buckets to ':1:users:@me'
+20:52:48 [36mDEBUG[0m [90mdiscord-rest_ratelimit.c:301:[0m [DISCORD_RATELIMIT] [78bb] Match ':1:users:@me' to bucket
+20:52:48 [36mDEBUG[0m [90mdiscord-rest_ratelimit.c:357:[0m [DISCORD_RATELIMIT] [78bb] Remaining = 999 | Reset = 1773521568672
+20:52:48 [94mTRACE[0m [90mdiscord-rest_ratelimit.c:252:[0m [DISCORD_RATELIMIT] [null] Couldn't match known buckets to ':1:gateway:bot'
+20:52:48 [36mDEBUG[0m [90mdiscord-rest_ratelimit.c:301:[0m [DISCORD_RATELIMIT] [41f9] Match ':1:gateway:bot' to bucket
+20:52:48 [36mDEBUG[0m [90mdiscord-rest_ratelimit.c:357:[0m [DISCORD_RATELIMIT] [41f9] Remaining = 1 | Reset = 1773521573856
+20:52:49 [32mINFO [0m [90mdiscord-gateway.c:338:[0m [DISCORD_GATEWAY] Connected, WS-Protocols: ''
+20:52:49 [94mTRACE[0m [90mdiscord-gateway.c:477:[0m [DISCORD_GATEWAY] [93mRCV[0m DISCORD_GATEWAY_HELLO (128 bytes) [@@@_6_@@@]
+20:52:49 [32mINFO [0m [90mdiscord-gateway_dispatch.c:171:[0m [DISCORD_GATEWAY] [92mSEND[0m IDENTIFY (301 bytes) [@@@_7_@@@]
+20:52:49 [94mTRACE[0m [90mdiscord-gateway.c:477:[0m [DISCORD_GATEWAY] [93mRCV[0m DISCORD_GATEWAY_DISPATCH -> READY (2236 bytes) [@@@_8_@@@]
+20:52:49 [32mINFO [0m [90mdiscord-gateway.c:210:[0m [DISCORD_GATEWAY] Successfully started a Discord session!
+20:52:49 [32mINFO [0m [90mdiscord-gateway_dispatch.c:279:[0m [DISCORD_GATEWAY] [92mSEND[0m HEARTBEAT (14 bytes) [@@@_9_@@@]
+20:52:49 [32mINFO [0m [90mdiscord-refcount.c:234:[0m [DISCORD_REFCOUNT] Adding concord's internal resource 0x61ea62059650
+20:52:49 [32mINFO [0m [90mdiscord-refcount.c:169:[0m [DISCORD_REFCOUNT] Fully decremented and free'd 0x61ea62059650
+20:52:49 [94mTRACE[0m [90mdiscord-gateway.c:477:[0m [DISCORD_GATEWAY] [93mRCV[0m DISCORD_GATEWAY_HEARTBEAT_ACK (36 bytes) [@@@_10_@@@]
+20:52:49 [94mTRACE[0m [90mdiscord-gateway.c:325:[0m [DISCORD_GATEWAY] PING: 174 ms
+20:52:55 [94mTRACE[0m [90mdiscord-gateway.c:477:[0m [DISCORD_GATEWAY] [93mRCV[0m DISCORD_GATEWAY_DISPATCH -> MESSAGE_CREATE (898 bytes) [@@@_11_@@@]
+20:52:55 [32mINFO [0m [90mdiscord-refcount.c:234:[0m [DISCORD_REFCOUNT] Adding concord's internal resource 0x61ea6205f5a0
+20:52:55 [32mINFO [0m [90mdiscord-refcount.c:169:[0m [DISCORD_REFCOUNT] Fully decremented and free'd 0x61ea6205f5a0
