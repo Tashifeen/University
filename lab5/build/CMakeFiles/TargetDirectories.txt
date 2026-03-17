@@ -1,4 +1,4 @@
-/home/Tashifeen/git/University/lab5/build/CMakeFiles/lab5_amber.dir
+/home/Tashifeen/git/University/lab5/build/CMakeFiles/first_example.dir
 /home/Tashifeen/git/University/lab5/build/CMakeFiles/edit_cache.dir
 /home/Tashifeen/git/University/lab5/build/CMakeFiles/rebuild_cache.dir
 /home/Tashifeen/git/University/lab5/build/pico-sdk/CMakeFiles/edit_cache.dir

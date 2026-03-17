@@ -153,25 +153,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/first_example.dir/first_example.c.o
  .data          0x00000000        0x0 CMakeFiles/first_example.dir/first_example.c.o
  .bss           0x00000000        0x0 CMakeFiles/first_example.dir/first_example.c.o
- .text          0x00000000        0x0 CMakeFiles/first_example.dir/morse.c.o
- .data          0x00000000        0x0 CMakeFiles/first_example.dir/morse.c.o
- .bss           0x00000000        0x0 CMakeFiles/first_example.dir/morse.c.o
- .text.setup    0x00000000       0x14 CMakeFiles/first_example.dir/morse.c.o
- .text.sos      0x00000000      0x12c CMakeFiles/first_example.dir/morse.c.o
- .text.startup.main
-                0x00000000      0x12c CMakeFiles/first_example.dir/morse.c.o
- .debug_info    0x00000000      0x971 CMakeFiles/first_example.dir/morse.c.o
- .debug_abbrev  0x00000000      0x13e CMakeFiles/first_example.dir/morse.c.o
- .debug_aranges
-                0x00000000       0x30 CMakeFiles/first_example.dir/morse.c.o
- .debug_rnglists
-                0x00000000       0x30 CMakeFiles/first_example.dir/morse.c.o
- .debug_line    0x00000000      0x36f CMakeFiles/first_example.dir/morse.c.o
- .debug_str     0x00000000      0x1cf CMakeFiles/first_example.dir/morse.c.o
- .comment       0x00000000       0x27 CMakeFiles/first_example.dir/morse.c.o
- .debug_frame   0x00000000       0x58 CMakeFiles/first_example.dir/morse.c.o
- .ARM.attributes
-                0x00000000       0x2c CMakeFiles/first_example.dir/morse.c.o
  .text          0x00000000        0x0 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
  .data          0x00000000        0x0 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
  .bss           0x00000000        0x0 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -4689,7 +4670,6 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x00000001                        ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed)
                 0x00000001                        ASSERT (((__binary_info_header_end - __logical_binary_start) <= 0x100), Binary info must be in first 256 bytes of the binary)
 LOAD CMakeFiles/first_example.dir/first_example.c.o
-LOAD CMakeFiles/first_example.dir/morse.c.o
 LOAD CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 LOAD CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 LOAD CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o

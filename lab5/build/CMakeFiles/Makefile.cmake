@@ -285,7 +285,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lab5_amber.dir/DependInfo.cmake"
+  "CMakeFiles/first_example.dir/DependInfo.cmake"
   "pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"
   "pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/DependInfo.cmake"

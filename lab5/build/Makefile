@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab5_amber
+# Target rules for targets named first_example
 
 # Build rule for target.
-lab5_amber: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab5_amber
-.PHONY : lab5_amber
+first_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 first_example
+.PHONY : first_example
 
 # fast build rule for target.
-lab5_amber/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/build
-.PHONY : lab5_amber/fast
+first_example/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/build
+.PHONY : first_example/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -194,12 +194,36 @@ pico_status_led_ws2812_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 .PHONY : pico_status_led_ws2812_pio_h/fast
 
+first_example.o: first_example.c.o
+.PHONY : first_example.o
+
+# target to build an object file
+first_example.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/first_example.c.o
+.PHONY : first_example.c.o
+
+first_example.i: first_example.c.i
+.PHONY : first_example.i
+
+# target to preprocess a source file
+first_example.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/first_example.c.i
+.PHONY : first_example.c.i
+
+first_example.s: first_example.c.s
+.PHONY : first_example.s
+
+# target to generate assembly for a file
+first_example.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/first_example.c.s
+.PHONY : first_example.c.s
+
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.o: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.o
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
@@ -207,7 +231,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: home/Tashifeen/pico-s
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
@@ -215,7 +239,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s: home/Tashifeen/pico-s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.o: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
@@ -223,7 +247,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.o: home/Tashifeen/pico-sdk
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
@@ -231,7 +255,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: home/Tashifeen/pico-sdk
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
@@ -239,7 +263,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s: home/Tashifeen/pico-sdk
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.o: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
@@ -247,7 +271,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.o: home/Tashifeen/pico-s
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
@@ -255,7 +279,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: home/Tashifeen/pico-s
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
@@ -263,7 +287,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s: home/Tashifeen/pico-s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.o: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
@@ -271,7 +295,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.o: home/Tashifeen/pico-
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
@@ -279,7 +303,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: home/Tashifeen/pico-
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
 
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s: home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
@@ -287,7 +311,7 @@ home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s: home/Tashifeen/pico-
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
@@ -295,7 +319,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/Tashife
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -303,7 +327,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/Tashife
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -311,7 +335,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/Tashife
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
@@ -319,7 +343,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/Tashifeen/p
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -327,7 +351,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/Tashifeen/p
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -335,7 +359,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/Tashifeen/p
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
@@ -343,7 +367,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/Tashifeen/p
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -351,7 +375,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/Tashifeen/p
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -359,7 +383,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/Tashifeen/p
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
@@ -367,7 +391,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/Tashifee
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -375,7 +399,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/Tashifee
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -383,7 +407,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/Tashifee
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
@@ -391,7 +415,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/Tashifeen/p
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -399,7 +423,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/Tashifeen/p
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -407,7 +431,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/Tashifeen/p
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
@@ -415,7 +439,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/Tashifeen
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -423,7 +447,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/Tashifeen
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -431,7 +455,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/Tashifeen
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
@@ -439,7 +463,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/Tashifeen/p
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -447,7 +471,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/Tashifeen/p
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -455,7 +479,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/Tashifeen/p
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
@@ -463,7 +487,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/Tashi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -471,7 +495,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/Tashi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -479,7 +503,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/Tashi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
@@ -487,7 +511,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/Tashifeen/p
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -495,7 +519,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/Tashifeen/p
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -503,7 +527,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/Tashifeen/p
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
@@ -511,7 +535,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/Tashi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -519,7 +543,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/Tashi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -527,7 +551,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/Tashi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
@@ -535,7 +559,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/Tashi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -543,7 +567,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/Tashi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -551,7 +575,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/Tashi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
@@ -559,7 +583,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/Tashife
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -567,7 +591,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/Tashife
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -575,7 +599,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/Tashife
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
@@ -583,7 +607,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/Tashifeen/pico-
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -591,7 +615,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/Tashifeen/pico-
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -599,7 +623,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/Tashifeen/pico-
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o
@@ -607,7 +631,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.o: home/Tashifeen/pico-sdk/l
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -615,7 +639,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.i: home/Tashifeen/pico-sdk/l
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -623,7 +647,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.s: home/Tashifeen/pico-sdk/l
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
@@ -631,7 +655,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/Tashifeen/pi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -639,7 +663,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/Tashifeen/pi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -647,7 +671,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/Tashifeen/pi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
@@ -655,7 +679,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -663,7 +687,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -671,7 +695,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
@@ -679,7 +703,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -687,7 +711,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -695,7 +719,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.o: home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o
@@ -703,7 +727,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.o: home/Tashifeen/pico-sdk/lib/tiny
 
 # target to build an object file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.i: home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -711,7 +735,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.i: home/Tashifeen/pico-sdk/lib/tiny
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.s: home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -719,7 +743,7 @@ home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.s: home/Tashifeen/pico-sdk/lib/tiny
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.o: home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o
@@ -727,7 +751,7 @@ home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.o: home/Tashifeen/pico-s
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o
 
 home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.i: home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.i
@@ -735,7 +759,7 @@ home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.i: home/Tashifeen/pico-s
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.i
 
 home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.s: home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.s
@@ -743,7 +767,7 @@ home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.s: home/Tashifeen/pico-s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.s
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.o: home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o
@@ -751,7 +775,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.o: home/Tashifeen/
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.i: home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -759,7 +783,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.i: home/Tashifeen/
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.s: home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -767,7 +791,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.s: home/Tashifeen/
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.o: home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o
@@ -775,7 +799,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.o: home/Tashifeen/pico-sd
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.i: home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -783,7 +807,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.i: home/Tashifeen/pico-sd
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.s: home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -791,7 +815,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.s: home/Tashifeen/pico-sd
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.o: home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o
@@ -799,7 +823,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.o: home/Tashifeen/pico-sdk/sr
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.i: home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -807,7 +831,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.i: home/Tashifeen/pico-sdk/sr
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.s: home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -815,7 +839,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.s: home/Tashifeen/pico-sdk/sr
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/sem.o: home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o
@@ -823,7 +847,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/sem.o: home/Tashifeen/pico-sdk/src/
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/sem.i: home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.i
@@ -831,7 +855,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/sem.i: home/Tashifeen/pico-sdk/src/
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/Tashifeen/pico-sdk/src/common/pico_sync/sem.s: home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.s
@@ -839,7 +863,7 @@ home/Tashifeen/pico-sdk/src/common/pico_sync/sem.s: home/Tashifeen/pico-sdk/src/
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/Tashifeen/pico-sdk/src/common/pico_time/time.o: home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o
@@ -847,7 +871,7 @@ home/Tashifeen/pico-sdk/src/common/pico_time/time.o: home/Tashifeen/pico-sdk/src
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o
 
 home/Tashifeen/pico-sdk/src/common/pico_time/time.i: home/Tashifeen/pico-sdk/src/common/pico_time/time.c.i
@@ -855,7 +879,7 @@ home/Tashifeen/pico-sdk/src/common/pico_time/time.i: home/Tashifeen/pico-sdk/src
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_time/time.c.i
 
 home/Tashifeen/pico-sdk/src/common/pico_time/time.s: home/Tashifeen/pico-sdk/src/common/pico_time/time.c.s
@@ -863,7 +887,7 @@ home/Tashifeen/pico-sdk/src/common/pico_time/time.s: home/Tashifeen/pico-sdk/src
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_time/time.c.s
 
 home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.o: home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o
@@ -871,7 +895,7 @@ home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.o: home/Tashifeen/pi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
 home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.i: home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -879,7 +903,7 @@ home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.i: home/Tashifeen/pi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.s: home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -887,7 +911,7 @@ home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.s: home/Tashifeen/pi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/Tashifeen/pico-sdk/src/common/pico_util/datetime.o: home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o
@@ -895,7 +919,7 @@ home/Tashifeen/pico-sdk/src/common/pico_util/datetime.o: home/Tashifeen/pico-sdk
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o
 
 home/Tashifeen/pico-sdk/src/common/pico_util/datetime.i: home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.i
@@ -903,7 +927,7 @@ home/Tashifeen/pico-sdk/src/common/pico_util/datetime.i: home/Tashifeen/pico-sdk
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/Tashifeen/pico-sdk/src/common/pico_util/datetime.s: home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.s
@@ -911,7 +935,7 @@ home/Tashifeen/pico-sdk/src/common/pico_util/datetime.s: home/Tashifeen/pico-sdk
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/Tashifeen/pico-sdk/src/common/pico_util/pheap.o: home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o
@@ -919,7 +943,7 @@ home/Tashifeen/pico-sdk/src/common/pico_util/pheap.o: home/Tashifeen/pico-sdk/sr
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o
 
 home/Tashifeen/pico-sdk/src/common/pico_util/pheap.i: home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.i
@@ -927,7 +951,7 @@ home/Tashifeen/pico-sdk/src/common/pico_util/pheap.i: home/Tashifeen/pico-sdk/sr
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/Tashifeen/pico-sdk/src/common/pico_util/pheap.s: home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.s
@@ -935,7 +959,7 @@ home/Tashifeen/pico-sdk/src/common/pico_util/pheap.s: home/Tashifeen/pico-sdk/sr
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/Tashifeen/pico-sdk/src/common/pico_util/queue.o: home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o
@@ -943,7 +967,7 @@ home/Tashifeen/pico-sdk/src/common/pico_util/queue.o: home/Tashifeen/pico-sdk/sr
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o
 
 home/Tashifeen/pico-sdk/src/common/pico_util/queue.i: home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.i
@@ -951,7 +975,7 @@ home/Tashifeen/pico-sdk/src/common/pico_util/queue.i: home/Tashifeen/pico-sdk/sr
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.i
 
 home/Tashifeen/pico-sdk/src/common/pico_util/queue.s: home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.s
@@ -959,7 +983,7 @@ home/Tashifeen/pico-sdk/src/common/pico_util/queue.s: home/Tashifeen/pico-sdk/sr
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.s
 
 home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.o: home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o
@@ -967,7 +991,7 @@ home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o
 
 home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.i: home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.i
@@ -975,7 +999,7 @@ home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.i
 
 home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.s: home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.s
@@ -983,39 +1007,15 @@ home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.s
-
-home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
-.PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.o
-
-# target to build an object file
-home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
-.PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
-
-home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-.PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.i
-
-# target to preprocess a source file
-home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-.PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-
-home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-.PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.s
-
-# target to generate assembly for a file
-home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-.PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -1023,7 +1023,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/Tash
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -1031,7 +1031,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/Tash
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
@@ -1039,7 +1039,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/Tashifeen/
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -1047,7 +1047,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/Tashifeen/
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -1055,7 +1055,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/Tashifeen/
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
@@ -1063,7 +1063,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/Tashifee
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
@@ -1071,7 +1071,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.o: home/Tashifeen/pico-s
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
@@ -1079,7 +1079,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/Tashifeen/pico-s
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
@@ -1087,7 +1087,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/Tashifeen/pico-s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
@@ -1095,7 +1095,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.o: home/Tash
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
@@ -1103,7 +1103,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.i: home/Tash
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
@@ -1111,7 +1111,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.s: home/Tash
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
@@ -1119,7 +1119,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/Tashifeen/pi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -1127,7 +1127,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/Tashifeen/pi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -1135,7 +1135,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/Tashifeen/pi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
@@ -1143,7 +1143,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -1151,7 +1151,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1159,7 +1159,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
@@ -1167,7 +1167,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/Tashifeen/pico-s
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1175,7 +1175,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/Tashifeen/pico-s
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1183,7 +1183,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/Tashifeen/pico-s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -1191,7 +1191,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/Ta
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
@@ -1199,7 +1199,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.o: home/Tashifeen/pico-s
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
@@ -1207,7 +1207,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/Tashifeen/pico-s
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
@@ -1215,7 +1215,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/Tashifeen/pico-s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
@@ -1223,7 +1223,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/Tashifeen/pico-s
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1231,7 +1231,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/Tashifeen/pico-s
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1239,7 +1239,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/Tashifeen/pico-s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
@@ -1247,7 +1247,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1255,7 +1255,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1263,7 +1263,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -1271,7 +1271,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o:
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -1279,7 +1279,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i:
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -1287,7 +1287,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s:
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
@@ -1295,7 +1295,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/Tashifeen/pi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
@@ -1303,7 +1303,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/Tashifeen/pi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
@@ -1311,7 +1311,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/Tashifeen/pi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
@@ -1319,7 +1319,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/Tashifeen/pi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1327,7 +1327,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/Tashifeen/pi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1335,7 +1335,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/Tashifeen/pi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
@@ -1343,7 +1343,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1351,7 +1351,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1359,7 +1359,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
@@ -1367,7 +1367,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1375,7 +1375,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1383,7 +1383,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -1391,7 +1391,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/Tashif
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1399,7 +1399,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/Tashif
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1407,7 +1407,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/Tashif
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
@@ -1415,7 +1415,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/Tash
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
@@ -1423,7 +1423,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/Tash
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
@@ -1431,7 +1431,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/Tash
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
@@ -1439,7 +1439,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1447,7 +1447,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1455,7 +1455,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
@@ -1463,7 +1463,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.o: 
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
@@ -1471,7 +1471,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i: 
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
@@ -1479,7 +1479,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s: 
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
@@ -1487,7 +1487,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsa
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
@@ -1495,7 +1495,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsa
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
@@ -1503,7 +1503,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsa
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
@@ -1511,7 +1511,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
@@ -1519,7 +1519,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
@@ -1527,7 +1527,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -1535,7 +1535,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/Tashif
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -1543,7 +1543,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/Tashifeen/pi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1551,7 +1551,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/Tashifeen/pi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1559,7 +1559,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/Tashifeen/pi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -1567,7 +1567,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/Tashife
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -1575,7 +1575,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/Tashife
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -1583,7 +1583,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/Tashife
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -1591,7 +1591,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: h
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -1599,7 +1599,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: h
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -1607,7 +1607,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: h
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -1615,7 +1615,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/Tashifeen/pico-sdk
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -1623,7 +1623,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/Tashi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -1631,7 +1631,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/Tashi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -1639,7 +1639,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/Tashi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
@@ -1647,7 +1647,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.o: home/Tashif
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
@@ -1655,7 +1655,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: home/Tashif
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
@@ -1663,7 +1663,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s: home/Tashif
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
@@ -1671,7 +1671,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.o: ho
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
@@ -1679,7 +1679,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: ho
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
@@ -1687,7 +1687,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s: ho
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
@@ -1695,7 +1695,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.o: home/T
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
@@ -1703,7 +1703,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: home/T
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
@@ -1711,7 +1711,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s: home/T
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
@@ -1719,7 +1719,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_bac
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
@@ -1727,7 +1727,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_bac
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
@@ -1735,7 +1735,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_bac
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
@@ -1743,7 +1743,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_sh
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
@@ -1751,7 +1751,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_sh
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
@@ -1759,7 +1759,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_sh
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
@@ -1767,7 +1767,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_sh
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
@@ -1775,7 +1775,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_sh
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
@@ -1783,7 +1783,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_sh
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
@@ -1791,7 +1791,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.o: ho
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
@@ -1799,7 +1799,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: ho
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
@@ -1807,7 +1807,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s: ho
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
@@ -1815,7 +1815,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.o: home/Ta
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
@@ -1823,7 +1823,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: home/Ta
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
@@ -1831,7 +1831,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s: home/Ta
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
@@ -1839,7 +1839,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home/Tas
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
@@ -1847,7 +1847,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/T
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
@@ -1855,7 +1855,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: hom
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
@@ -1863,7 +1863,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: hom
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
@@ -1871,7 +1871,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: hom
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o
@@ -1879,7 +1879,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.o: home/Tashifeen
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1887,7 +1887,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.i: home/Tashifeen
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1895,7 +1895,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.s: home/Tashifeen
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
@@ -1903,7 +1903,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: 
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
@@ -1911,7 +1911,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1919,7 +1919,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1927,7 +1927,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o
@@ -1935,7 +1935,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.o: home/Tashifeen/pico-s
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.i
@@ -1943,7 +1943,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.i: home/Tashifeen/pico-s
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.s
@@ -1951,7 +1951,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.s: home/Tashifeen/pico-s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
@@ -1959,7 +1959,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/Tas
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
@@ -1967,7 +1967,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
@@ -1975,7 +1975,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
@@ -1983,7 +1983,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: home/
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o
@@ -1991,7 +1991,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.o: home/Tashifeen/p
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1999,7 +1999,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.i: home/Tashifeen/p
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -2007,7 +2007,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.s: home/Tashifeen/p
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
@@ -2015,7 +2015,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: ho
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
@@ -2023,7 +2023,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: ho
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
@@ -2031,7 +2031,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
@@ -2039,7 +2039,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
@@ -2047,7 +2047,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
@@ -2055,7 +2055,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/Tashif
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
@@ -2063,7 +2063,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.o: home/Tashi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
@@ -2071,7 +2071,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.i: home/Tashi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
@@ -2079,7 +2079,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.s: home/Tashi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
@@ -2087,7 +2087,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/Tashife
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
@@ -2095,7 +2095,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/Tashife
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
@@ -2103,7 +2103,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/Tashife
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o
@@ -2111,7 +2111,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -2119,7 +2119,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -2127,7 +2127,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
@@ -2135,7 +2135,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/Tashifeen/pi
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -2143,7 +2143,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/Tashifeen/pi
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -2151,7 +2151,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/Tashifeen/pi
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -2159,7 +2159,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/Ta
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -2167,7 +2167,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/Ta
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -2175,7 +2175,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/Ta
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -2183,7 +2183,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: 
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -2191,7 +2191,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: 
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -2199,7 +2199,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: 
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -2207,7 +2207,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guar
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -2215,7 +2215,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guar
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -2223,7 +2223,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guar
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -2231,7 +2231,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -2239,7 +2239,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -2247,7 +2247,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
@@ -2255,7 +2255,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/Tashifeen/pico-s
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -2263,7 +2263,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/Tashifeen/pico-s
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -2271,7 +2271,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/Tashifeen/pico-s
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
@@ -2279,7 +2279,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: home/Ta
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -2287,7 +2287,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/Ta
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -2295,7 +2295,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/Ta
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
@@ -2303,7 +2303,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/Tashifee
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -2311,7 +2311,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/Tashifee
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -2319,7 +2319,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/Tashifee
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
@@ -2327,7 +2327,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: h
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -2335,7 +2335,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: h
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -2343,7 +2343,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: h
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -2351,7 +2351,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/Tashifeen/pico
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -2359,7 +2359,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/Tashifeen/pico
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -2367,7 +2367,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/Tashifeen/pico
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
@@ -2375,7 +2375,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/Tashifee
 
 # target to build an object file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -2383,7 +2383,7 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/Tashifee
 
 # target to preprocess a source file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -2391,32 +2391,8 @@ home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/Tashifee
 
 # target to generate assembly for a file
 home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first_example.dir/build.make CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-
-lab5_amber.o: lab5_amber.c.o
-.PHONY : lab5_amber.o
-
-# target to build an object file
-lab5_amber.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/lab5_amber.c.o
-.PHONY : lab5_amber.c.o
-
-lab5_amber.i: lab5_amber.c.i
-.PHONY : lab5_amber.i
-
-# target to preprocess a source file
-lab5_amber.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/lab5_amber.c.i
-.PHONY : lab5_amber.c.i
-
-lab5_amber.s: lab5_amber.c.s
-.PHONY : lab5_amber.s
-
-# target to generate assembly for a file
-lab5_amber.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_amber.dir/build.make CMakeFiles/lab5_amber.dir/lab5_amber.c.s
-.PHONY : lab5_amber.c.s
 
 # Help Target
 help:
@@ -2431,7 +2407,10 @@ help:
 	@echo "... pico_status_led_ws2812_pio_h"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
-	@echo "... lab5_amber"
+	@echo "... first_example"
+	@echo "... first_example.o"
+	@echo "... first_example.i"
+	@echo "... first_example.s"
 	@echo "... home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.o"
 	@echo "... home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i"
 	@echo "... home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s"
@@ -2531,9 +2510,6 @@ help:
 	@echo "... home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.o"
 	@echo "... home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.i"
 	@echo "... home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.s"
-	@echo "... home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.o"
-	@echo "... home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.i"
-	@echo "... home/Tashifeen/pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
 	@echo "... home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
 	@echo "... home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s"
@@ -2707,9 +2683,6 @@ help:
 	@echo "... home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... lab5_amber.o"
-	@echo "... lab5_amber.i"
-	@echo "... lab5_amber.s"
 .PHONY : help
 
 

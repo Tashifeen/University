@@ -186,8 +186,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
   "CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d"
-  "CMakeFiles/first_example.dir/morse.c.o"
-  "CMakeFiles/first_example.dir/morse.c.o.d"
   "first_example.bin"
   "first_example.dis"
   "first_example.elf"

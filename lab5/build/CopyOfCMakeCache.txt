@@ -172,7 +172,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=first_example
+CMAKE_PROJECT_NAME:STATIC=lab5_amber
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/arm-none-eabi-ranlib

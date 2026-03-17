@@ -86,24 +86,10 @@ CMakeFiles/first_example.dir/first_example.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/first_example.dir/first_example.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/Tashifeen/git/University/lab5/first_example.c -o CMakeFiles/first_example.dir/first_example.c.s
 
-CMakeFiles/first_example.dir/morse.c.o: CMakeFiles/first_example.dir/flags.make
-CMakeFiles/first_example.dir/morse.c.o: /home/Tashifeen/git/University/lab5/morse.c
-CMakeFiles/first_example.dir/morse.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/first_example.dir/morse.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/morse.c.o -MF CMakeFiles/first_example.dir/morse.c.o.d -o CMakeFiles/first_example.dir/morse.c.o -c /home/Tashifeen/git/University/lab5/morse.c
-
-CMakeFiles/first_example.dir/morse.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/first_example.dir/morse.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/Tashifeen/git/University/lab5/morse.c > CMakeFiles/first_example.dir/morse.c.i
-
-CMakeFiles/first_example.dir/morse.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/first_example.dir/morse.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/Tashifeen/git/University/lab5/morse.c -o CMakeFiles/first_example.dir/morse.c.s
-
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -117,7 +103,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -131,7 +117,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpi
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o: /home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o -c /home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.i: cmake_force
@@ -145,7 +131,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/pl
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_common/common.c.i: cmake_force
@@ -159,7 +145,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platfor
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
@@ -173,7 +159,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_platfor
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o: /home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.o -c /home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/claim.c.i: cmake_force
@@ -187,7 +173,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/hardware_claim/c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -201,7 +187,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_syn
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
@@ -215,7 +201,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_syn
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -228,7 +214,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -242,7 +228,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_irq
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o: /home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.o -c /home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -256,7 +242,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/sem.c.
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o: /home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.o -c /home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -270,7 +256,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/lock_c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o: /home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.o -c /home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -284,7 +270,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/mutex.
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o: /home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.o -c /home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -298,7 +284,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_sync/critic
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o: /home/Tashifeen/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.o -c /home/Tashifeen/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -312,7 +298,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o: /home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.o -c /home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -326,7 +312,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_time/timeou
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -340,7 +326,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_tim
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o: /home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.o -c /home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -354,7 +340,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/dateti
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o: /home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.o -c /home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -368,7 +354,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/pheap.
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o: /home/Tashifeen/pico-sdk/src/common/pico_util/queue.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.o -c /home/Tashifeen/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -382,7 +368,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/common/pico_util/queue.
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -396,7 +382,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_uar
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -410,7 +396,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_clo
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -424,7 +410,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pll
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -438,7 +424,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_vre
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -452,7 +438,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_wat
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
@@ -466,7 +452,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_tic
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -480,7 +466,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
@@ -494,7 +480,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bootrom
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
@@ -508,7 +494,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_boo
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/flash.c.i: cmake_force
@@ -522,7 +508,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_flash/f
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -535,7 +521,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xos
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -549,7 +535,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_div
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -563,7 +549,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
@@ -577,7 +563,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
@@ -591,7 +577,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
@@ -604,7 +590,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_runtime
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -617,7 +603,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_bit_ops
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.i: cmake_force
@@ -630,7 +616,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_divider
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.i: cmake_force
@@ -644,7 +630,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
@@ -658,7 +644,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -671,7 +657,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i: cmake_force
@@ -684,7 +670,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_double/
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -697,7 +683,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_int64_o
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.i: cmake_force
@@ -711,7 +697,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/f
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
@@ -725,7 +711,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/f
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -738,7 +724,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/f
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i: cmake_force
@@ -752,7 +738,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_float/f
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
@@ -765,7 +751,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_malloc/
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -779,7 +765,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_mem_ops
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
@@ -793,7 +779,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_atomic/
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
@@ -807,7 +793,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cxx_opt
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
@@ -821,7 +807,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_standar
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -834,7 +820,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_printf/
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building ASM object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o   -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
@@ -848,7 +834,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/cr
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
@@ -862,7 +848,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_clib_in
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -876,7 +862,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio/s
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -890,7 +876,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_u
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -904,7 +890,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_u
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -918,7 +904,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdio_u
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -932,7 +918,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_unique_
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -946,7 +932,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_fla
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
@@ -960,7 +946,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_xip
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -974,7 +960,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/ra
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -988,7 +974,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/portable/ra
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -1002,7 +988,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -1016,7 +1002,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/device/usbd
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -1030,7 +1016,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/audio
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -1044,7 +1030,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/cdc/c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -1058,7 +1044,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/d
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -1072,7 +1058,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/dfu/d
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -1086,7 +1072,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/hid/h
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -1100,7 +1086,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/midi/
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -1114,7 +1100,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/msc/m
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -1128,7 +1114,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/e
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -1142,7 +1128,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/net/n
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -1156,7 +1142,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/usbtm
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1170,7 +1156,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/vendo
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1184,7 +1170,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/class/video
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1198,7 +1184,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/tusb.c.s: c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: /home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -c /home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1212,7 +1198,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/tinyusb/src/common/tusb
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1226,7 +1212,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_fix/rp2
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i: cmake_force
@@ -1240,7 +1226,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_a
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i: cmake_force
@@ -1254,7 +1240,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_a
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i: cmake_force
@@ -1268,7 +1254,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_a
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i: cmake_force
@@ -1282,7 +1268,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_a
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i: cmake_force
@@ -1296,7 +1282,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_d
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o: /home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o -c /home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i: cmake_force
@@ -1310,7 +1296,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o: /home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o -c /home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i: cmake_force
@@ -1324,7 +1310,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o: /home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o -c /home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i: cmake_force
@@ -1338,7 +1324,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o: /home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o -c /home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i: cmake_force
@@ -1352,7 +1338,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/lib/cyw43-driver/src/cyw43_
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i: cmake_force
@@ -1366,7 +1352,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_d
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i: cmake_force
@@ -1380,7 +1366,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_d
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
@@ -1394,7 +1380,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_pio
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
@@ -1408,7 +1394,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_dma
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exception/exception.c.i: cmake_force
@@ -1422,7 +1408,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_exc
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i: cmake_force
@@ -1436,7 +1422,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_cyw43_d
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i: cmake_force
@@ -1450,7 +1436,7 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o: CMakeFiles/first_example.dir/flags.make
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o: /home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o: CMakeFiles/first_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o -MF CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o.d -o CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o -c /home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c
 
 CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i: cmake_force
@@ -1464,7 +1450,6 @@ CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_async_c
 # Object files for target first_example
 first_example_OBJECTS = \
 "CMakeFiles/first_example.dir/first_example.c.o" \
-"CMakeFiles/first_example.dir/morse.c.o" \
 "CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o" \
 "CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o" \
 "CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o" \
@@ -1568,7 +1553,6 @@ first_example_OBJECTS = \
 first_example_EXTERNAL_OBJECTS =
 
 first_example.elf: CMakeFiles/first_example.dir/first_example.c.o
-first_example.elf: CMakeFiles/first_example.dir/morse.c.o
 first_example.elf: CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 first_example.elf: CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 first_example.elf: CMakeFiles/first_example.dir/home/Tashifeen/pico-sdk/src/rp2040/pico_platform/platform.c.o
@@ -1671,7 +1655,7 @@ first_example.elf: CMakeFiles/first_example.dir/build.make
 first_example.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 first_example.elf: /home/Tashifeen/pico-sdk/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 first_example.elf: CMakeFiles/first_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Linking CXX executable first_example.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Tashifeen/git/University/lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Linking CXX executable first_example.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/first_example.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objdump -h /home/Tashifeen/git/University/lab5/build/first_example.elf > first_example.dis
 	/usr/bin/arm-none-eabi-objdump -d /home/Tashifeen/git/University/lab5/build/first_example.elf >> first_example.dis
