@@ -1,4 +1,7 @@
 #include <unordered_map>
+#include <vector>
+#include <cmath>
+using namespace std;
 
 template<typename T1, typename T2>
 unordered_map<T1, T2> swag(vector<pair<T1, T2>> in, int op) {
@@ -18,7 +21,7 @@ unordered_map<T1, T2> swag(vector<pair<T1, T2>> in, int op) {
 		const vector<T2>& vals = entry.second;
 		int n = vals.size();
 
-		T2 answer;
+		T2 answer = T2(); // default-initalise (which is 0 for numbers)
 
 		if (op == 0) {
 			// Arithmetic mean
@@ -28,7 +31,7 @@ unordered_map<T1, T2> swag(vector<pair<T1, T2>> in, int op) {
 		}
 		else if (op == 1) {
 			// Geometric mean
-			T2 product = 1
+			T2 product = 1;
 			for (const auto& x: vals) product *= x;
 			answer = pow(product, 1.0 / n);
 		}
