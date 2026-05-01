@@ -1,12 +1,10 @@
-// Decision Tree Classifier - COMP XXXX Coursework
-// Student implementation in C++
 // References used throughout:
 //   [1] bowbowbow GitHub - https://github.com/bowbowbow/DecisionTree/blob/master/decision_tree.cpp
 //   [2] CodeSignal lesson - "Building a Decision Tree from Scratch in C++"
 //   [3] Lamotte, H. - "Implementing a Decision Tree from Scratch using C++" (Towards Data Science)
-//   [4] AI Assistant (Claude, Anthropic) - used for debugging and explaining C++ concepts
+//   [4] AI Assistant (Claude, Anthropic) - used for debugging and explaining new C++ concepts
 //   [5] Course lecture notes: CDTREE and C++ Conditions Lesson 08
-
+//   [6] Greedy Best first search algorithm - https://www.geeksforgeeks.org/dsa/greedy-best-first-search-algorithm/
 
 #include <iostream>
 #include <fstream>
@@ -16,10 +14,10 @@
 #include <utility>   // for std::pair
 
 
-// ─────────────────────────────────────────────────────────────────
-// 1. DATA STRUCTURE
-// Each row in the dataset has 10 binary features and a class label
-// ─────────────────────────────────────────────────────────────────
+/* 1. DATA STRUCTURE
+   Each row in the dataset (training.dat/test.dat) has
+   10 binary features and a class label
+*/
 
 struct DataPoint {
     std::vector<int> features;  // the 10 binary features (0 or 1)
@@ -27,18 +25,16 @@ struct DataPoint {
 };
 
 
-// ─────────────────────────────────────────────────────────────────
-// 2. NODE CLASSES
-//
-// Inspired by the Node structure in [1] and the TreeNode struct in [2].
-// The key difference here is we use two seperate classes (LeafNode and
-// RuleNode) both inheriting from a base Node class, as recommended in
-// the coursework spec. This lets us store both types behind a Node* pointer.
-// Claude [4] explained why the virtual destructor is needed in the base class
-// - without it, deleting a derived object through a base pointer causes
-// undefined behaviour (memory leak or crash).
-// ─────────────────────────────────────────────────────────────────
 
+/* 2. NODE CLASSES
+	- This was inspired by the Node structure in [1] and the TreeNode struct in [2].
+	- The key difference here is that I'm using two seperate classes (LeafNode and
+	  RuleNode) which both inherit from a base Node class, as recommended in
+	  the coursework spec. This lets us store both types behind a Node* pointer.
+	- Claude [4] explained why the virtual destructor is needed in the base class,
+	  and it explained how deleting a derived object through a base pointer
+	  causes undefined behaviour (memory leak or crash).
+*/
 class Node {
 public:
     virtual ~Node() {}               // always needed for base classes - [4]
@@ -46,23 +42,23 @@ public:
 };
 
 
-// LeafNode stores which training points have landed here (by index)
+/* LeafNode stores which training points have landed here (by index)
 // Rather than copying the actual data we just store the row numbers
-// and look them up later - idea adapted from [1]
+// and look them up later - idea adapted from [1] */
 class LeafNode : public Node {
 public:
-    std::vector<int> indices;  // indices into the training dataset
+    std::vector<int> indices;  // indices (row numbers) into the training dataset
 
-    // constructor takes a list of indicies
+    // constructor taking a list of indicies
     LeafNode(std::vector<int> idx) : indices(idx) {}
 
     bool isLeaf() const override { return true; }
 };
 
 
-// RuleNode splits on a single binary feature.
-// If feature == 0, go left. If feature == 1, go right.
-// Structure loosly inspired by TreeNode in [2] but simplified for binary features
+/* RuleNode splits on a single binary feature
+   If feature == 0, go left. If feature == 1, go right
+   Structure loosly inspired by TreeNode in [2] but simplified for binary features */
 class RuleNode : public Node {
 public:
     int   featureIndex;  // which feature (0-9) this node tests
@@ -82,15 +78,11 @@ public:
 };
 
 
-// ─────────────────────────────────────────────────────────────────
-// 3. SPLIT CANDIDATE
-//
-// This struct holds everything we need to evaluate a potential split.
-// The treeSlot pointer-to-pointer was suggested by Claude [4] as a way
-// to replace a leaf in the tree without having to search for it again.
-// This was probably the trickiest C++ concept in the whole implementation.
-// ─────────────────────────────────────────────────────────────────
 
+/* 3. SPLIT CANDIDATE
+   This struct holds everything I'll need for evaluating a potential split.
+   This was easily the trickiest C++ concept for me this whole implementation
+   with the double pointers!!! */
 struct SplitCandidate {
     double    improvement;  // weighted gini improvement (higher = better)
     int       bestFeature;  // which feature to split on
@@ -105,14 +97,11 @@ struct SplitCandidate {
 };
 
 
-// ─────────────────────────────────────────────────────────────────
-// 4. DATA LOADING
-// Reads a file where each line is: f0 f1 f2 ... f9 label
-// ─────────────────────────────────────────────────────────────────
-
+/* 4. DATA LOADING
+   Reading a file where each line is: f0 f1 f2 ... f9 label */
 std::vector<DataPoint> loadData(const std::string& filename) {
     std::vector<DataPoint> dataset;
-    std::ifstream file(filename);
+    std::ifstream file(filename); // File reader in C++ (like 'fopen' in C)
 
     if (!file.is_open()) {
         std::cerr << "Error: cannot open " << filename << "\n";
@@ -123,17 +112,17 @@ std::vector<DataPoint> loadData(const std::string& filename) {
     while (std::getline(file, line)) {
         if (line.empty()) continue;
 
-        std::istringstream ss(line);
+        std::istringstream ss(line); // Turns that string into a strem to read numbers from
         DataPoint dp;
         int val;
 
         // read all numbers on the line into a temp vector
         std::vector<int> vals;
-        while (ss >> val) vals.push_back(val);
+        while (ss >> val) vals.push_back(val); // loop pulls ints one at a time until line over
 
         // last value is the label, everything else is a feature
-        dp.label = vals.back();
-        vals.pop_back();
+        dp.label = vals.back(); // get last element
+        vals.pop_back(); // remove label, leaving just the features
         dp.features = vals;
 
         dataset.push_back(dp);
@@ -143,17 +132,18 @@ std::vector<DataPoint> loadData(const std::string& filename) {
 }
 
 
-// ─────────────────────────────────────────────────────────────────
-// 5. PURITY FUNCTIONS
-//
-// Gini impurity measures how mixed the classes are in a set of points.
-// Formula: Gini = 1 - sum(pi^2) where pi is proportion of class i
-// A pure node (all one class) gives Gini = 0.
-// An equal mix of 3 classes gives Gini ~0.667
-//
-// Concept from Wikipedia on decision trees and the CDTREE lecture [5].
-// The getMajorityLabel function in [1] also informed how I count classes.
-// ─────────────────────────────────────────────────────────────────
+/*
+   5. PURITY FUNCTIONS
+   
+   - Gini impurity measures how mixed the classes are in a set of points
+   - Formula: Gini = 1 - sum(pi^2) where pi is proportion of class i
+   - A pure node (all one class) gives Gini = 0
+   - An equal mix of 3 classes gives Gini ~0.667
+
+   Sources:
+   - Understanding came form from Wikipedia on decision trees and the CDTREE lecture [5]
+   - The getMajorityLabel function in [1] also informed how I count classes
+*/
 
 double gini(const std::vector<int>& indices,
             const std::vector<DataPoint>& data,
@@ -176,7 +166,7 @@ double gini(const std::vector<int>& indices,
 }
 
 
-// Computes the weighted gini score of splitting a set of points on one feature
+// Computing weighted gini score of splitting a set of points on one feature
 // Returns a score between 0 (perfect split) and ~0.667 (no improvement)
 double splitScore(const std::vector<int>& indices,
                   const std::vector<DataPoint>& data,
@@ -227,7 +217,7 @@ std::pair<int, double> bestSplit(const std::vector<int>& indices,
 // Returns the most common class label among a set of training points.
 // This is what the leaf predicts. Adapted from create_terminal() in [2]
 // which does the same thing but using a map - I used a simpler vector
-// since we know theres only 3 classes.
+// since we know theres only 3 classes
 int majorityClass(const std::vector<int>& indices,
                   const std::vector<DataPoint>& data,
                   int numClasses = 3) {
@@ -246,21 +236,20 @@ int majorityClass(const std::vector<int>& indices,
 }
 
 
-// ─────────────────────────────────────────────────────────────────
-// 6. TREE BUILDING
-//
-// Uses a priority queue to greedily pick the best leaf to split next.
-// The key insight (from the coursework spec and confirmed by [3]) is that
-// you need to weight the improvement by leaf size - otherwise you end up
-// splitting tiny leaves with artificaly high gini scores.
-//
-// Bug found during testing: before adding the leaf size weighting, split 8
-// was scoring 0.5 because it perfectly separated just 2 points. Claude [4]
-// helped identify this by looking at the printed improvement values which
-// were not decreasing as expected.
-// ─────────────────────────────────────────────────────────────────
 
-// Evaluates a leaf and pushes it onto the priority queue if its worth splitting
+/* 6. TREE BUILDING
+
+   Uses a priority queue to greedily pick the best leaf to split next.
+   The key insight (from the coursework spec and confirmed by [3]) is that
+   I needed to weight the improvement by leaf size - otherwise I end up
+   splitting tiny leaves with artificaly high gini scores.
+
+   Bug found during testing: before adding the leaf size weighting, split 8
+   was scoring 0.5 because it perfectly separated just 2 points. Claude [4]
+   helped identify this by looking at the printed improvement values which
+   were not decreasing as expected. */
+
+// Evaluating a leaf and pushes it onto the priority queue if its worth splitting
 void evaluateLeaf(LeafNode* leaf,
                   Node**    treeSlot,
                   const std::vector<DataPoint>& data,
@@ -280,7 +269,7 @@ void evaluateLeaf(LeafNode* leaf,
 }
 
 
-// Builds the decision tree using greedy best-first splitting
+// Builds the decision tree using greedy best-first splitting [6]
 // Stops after maxSplits rule nodes have been created
 Node* buildTree(const std::vector<DataPoint>& data, int maxSplits) {
 
@@ -289,7 +278,7 @@ Node* buildTree(const std::vector<DataPoint>& data, int maxSplits) {
     for (int i = 0; i < (int)data.size(); i++)
         allIndices.push_back(i);
 
-    // root starts as a leaf - will be replaced when we make the first split
+    // root starts as a leaf - to be replaced when we make the first split
     Node* root = new LeafNode(allIndices);
 
     std::priority_queue<SplitCandidate> pq;
@@ -302,9 +291,9 @@ Node* buildTree(const std::vector<DataPoint>& data, int maxSplits) {
         SplitCandidate best = pq.top();
         pq.pop();
 
-        LeafNode* leaf    = best.leaf;
-        int       feature = best.bestFeature;
-        Node**    slot    = best.treeSlot;
+        LeafNode* leaf = best.leaf;
+        int feature = best.bestFeature;
+        Node** slot = best.treeSlot;
 
         // split the leaf's data points into left and right groups
         std::vector<int> leftIdx, rightIdx;
@@ -336,15 +325,13 @@ Node* buildTree(const std::vector<DataPoint>& data, int maxSplits) {
 }
 
 
-// ─────────────────────────────────────────────────────────────────
-// 7. PREDICTION
-//
-// Walk the tree from root to leaf for a single data point.
-// At each rule node check the relevant feature and go left or right.
-// At the leaf return the majority class of the training points there.
-// This traversal approach is similar to dfs() in [1] but iterative
-// rather than recursive - simpler and avoids stack overflow on deep trees.
-// ─────────────────────────────────────────────────────────────────
+/* 7. PREDICTION
+
+   - Here we walk the tree from root to leaf for a single data point
+   - At each rule node check the relevant feature and go left or right
+   - At the leaf return the majority class of the training points there
+   - This traversal approach is kinda similar to dfs() in [1] but iterative
+     rather than recursive so it's simpler and avoids stack overflow on deep trees */
 
 int predict(Node* node,
             const DataPoint& point,
@@ -365,7 +352,7 @@ int predict(Node* node,
 }
 
 
-// Calculates accuracy over a dataset (correct predictions / total points)
+// Calculating accuracy over a dataset (correct predictions / total points)
 double accuracy(Node* tree,
                 const std::vector<DataPoint>& trainData,
                 const std::vector<DataPoint>& testData) {
@@ -380,10 +367,8 @@ double accuracy(Node* tree,
 }
 
 
-// ─────────────────────────────────────────────────────────────────
 // 8. MAIN
 // Builds the tree at various split counts and reports accuracy
-// ─────────────────────────────────────────────────────────────────
 
 int main() {
     auto trainData = loadData("training.dat");
@@ -392,7 +377,7 @@ int main() {
     std::cout << "Loaded " << trainData.size() << " train, "
               << testData.size()  << " test points\n\n";
 
-    // test at a range of split counts to see how performance changes
+    // testing at a range of split counts to see how performance changes
     std::vector<int> splitCounts = {1, 2, 3, 5, 7, 10, 15, 20, 30, 50, 75, 100};
 
     std::cout << "Splits  |  Train Accuracy  |  Test Accuracy\n";
@@ -411,14 +396,13 @@ int main() {
 }
 
 
-// =================================================================
+
 // OLD TEST MAINS - kept here to show the incremental testing process
 // Each block was used to verify one stage before moving to the next
 // Compile with: g++ -std=c++17 -o dt main.cpp
-// =================================================================
 
 
-// ── TEST 1: Data Loading ─────────────────────────────────────────
+// TEST 1: Data Loading
 // First test written - just checks the file loads correctly and
 // prints the first data point to verify parsing worked
 /*
@@ -438,7 +422,7 @@ int main() {
 // Confirmed the file was being read and parsed correctly.
 
 
-// ── TEST 2: Node Classes ─────────────────────────────────────────
+// TEST 2: Node Classes
 // Tested that LeafNode and RuleNode could be created and that
 // manually splitting on feature 0 gave reasonable left/right sizes
 /*
@@ -481,7 +465,7 @@ int main() {
 // Node classes working correctly.
 
 
-// ── TEST 3: Gini + bestSplit ──────────────────────────────────────
+// TEST 3: Gini + bestSplit
 // Tested the purity functions before wiring them into the tree builder.
 // Wanted to check: root gini should be ~0.667 for 3 balanced classes,
 // and bestSplit should identify a sensible first feature.
@@ -516,7 +500,7 @@ int main() {
 // Feature 4 and feature 1 clearly stood out as the most informative.
 
 
-// ── TEST 4: Tree Building (before leaf-size weighting fix) ────────
+// TEST 4: Tree Building (before leaf-size weighting fix)
 // This was the version with the bug - improvements were NOT decreasing.
 // Kept here to show the debugging process.
 // Claude [4] helped spot that split 8 (0.5 improvement on 2 points)
@@ -540,7 +524,7 @@ int main() {
 // After fix improvements correctly decreased from 71.3 down to 2.7 over 10 splits.
 
 
-// ── TEST 5: Accuracy (test.dat not found) ────────────────────────
+// TEST 5: Accuracy (test.dat not found)
 // First run of the accuracy sweep - failed because test.dat wasnt in
 // the right directory. Kept as a reminder of that debugging step.
 /*

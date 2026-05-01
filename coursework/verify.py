@@ -1,3 +1,8 @@
+"""Sources:
+    - https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+    - https://www.geeksforgeeks.org/machine-learning/building-and-implementing-decision-tree-classifiers-with-scikit-learn-a-comprehensive-guide/
+"""
+
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 import numpy as np
