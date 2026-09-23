@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+/home/Tashifeen/git/University/lab6/build/CMakeFiles/picotoolBuild
+/home/Tashifeen/git/University/lab6/build/CMakeFiles/picotoolBuild.rule
+/home/Tashifeen/git/University/lab6/build/CMakeFiles/picotoolBuild-complete.rule
+/home/Tashifeen/git/University/lab6/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+/home/Tashifeen/git/University/lab6/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+/home/Tashifeen/git/University/lab6/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+/home/Tashifeen/git/University/lab6/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+/home/Tashifeen/git/University/lab6/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+/home/Tashifeen/git/University/lab6/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+/home/Tashifeen/git/University/lab6/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+/home/Tashifeen/git/University/lab6/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule

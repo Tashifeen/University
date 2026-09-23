@@ -1,0 +1,5 @@
+/home/Tashifeen/git/University/lab5/build/pioasm-install/pioasm/pioasm
+/home/Tashifeen/git/University/lab5/build/pioasm-install/pioasm/pioasmTargets.cmake
+/home/Tashifeen/git/University/lab5/build/pioasm-install/pioasm/pioasmTargets-release.cmake
+/home/Tashifeen/git/University/lab5/build/pioasm-install/pioasm/pioasmConfig.cmake
+/home/Tashifeen/git/University/lab5/build/pioasm-install/pioasm/pioasmConfigVersion.cmake
