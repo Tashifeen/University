@@ -1,26 +1,46 @@
-# CPU Design Coursework
+# ECS Maze Runner Coursework
  
 ## Files
  
-### Source Modules
-- `program_counter.sv` - Program Counter implementation
-- `instruction_memory.sv` - Instruction Memory implementation
-- `alu.sv` - Arithmetic Logic Unit (ALU) implementation
-- `decoder.sv` - Instruction Decoder implementation
-- `register_file.sv` - Register File implementation
+### Core Modules
+- `runner.py` - Runner representation and movement functions
+- `maze.py` - Maze class implementation
+- `maze_runner.py` - Maze reader and command-line interface
  
-### Testbenches
-- `test_program_counter.sv` - Tests for Program Counter
-- `test_alu.sv` - Tests for ALU
-- `test_decoder.sv` - Tests for Decoder
-- `test_register_file.sv` - Tests for Register File
+### Additional Files
+- `exploration.csv` - Exploration log output
+- `statistics.txt` - Maze-solving statistics output
  
-## Running Tests
+## Features
  
-Compile the required module with its corresponding testbench using your SystemVerilog simulator.
+### Part 1
+- Create and manage runners
+- Turn left/right
+- Move forward
  
-Example:
+### Part 2
+- Create mazes with configurable dimensions
+- Add horizontal and vertical walls
+- Query wall information
+ 
+### Part 3
+- Sense nearby walls
+- Safe movement within the maze
+- Maze exploration using the left-hug algorithm
+ 
+### Part 4
+- Compute a shortest path between two positions
+ 
+### Part 5
+- Read maze definitions from `.mz` files
+- Command-line support using `argparse`
+- Input validation and error handling
+ 
+### Part 6
+- Generate exploration logs (`exploration.csv`)
+- Generate statistics reports (`statistics.txt`)
+ 
+## Running
  
 ```bash
-iverilog -g2012 program_counter.sv test_program_counter.sv -o test_pc
-vvp test_pc
+python maze_runner.py maze1.mz
