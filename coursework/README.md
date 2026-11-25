@@ -1,5 +1,14 @@
 # Decision Tree Coursework
- 
+
+## Summary
+For this project, I implemented a full decision tree classifier in C++. The system reads binary feature data, builds a greedy best‑first decision tree using Gini impurity, and predicts class labels for unseen data. I designed the full architecture myself, including data structures, node classes, split evaluation, tree construction, prediction, and accuracy measurement.
+
+The implementation uses a priority queue to select the best leaf to split, weighting impurity improvements by leaf size to avoid misleading splits. I built a polymorphic node system (Node, LeafNode, RuleNode), implemented Gini impurity and CART scoring, and handled memory management manually through destructors and pointer‑to‑pointer tree updates.
+
+I tested performance across different split limits and analysed overfitting behaviour. To verify correctness, I compared my C++ results against scikit‑learn’s DecisionTreeClassifier using the same dataset. The outputs matched to within 0.1 percent across all split counts.
+
+This project strengthened my skills in C++, algorithms, data structures, memory management, and implementing machine learning models from first principles.
+ 
 ## Files
  
 ### Source Code
