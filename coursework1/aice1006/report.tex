@@ -1,0 +1,757 @@
+\documentclass[12pt, a4paper]{report}
+
+\usepackage{graphicx}   % Required for inserting images
+\usepackage{hyperref}   % For having clickable links - https://www.overleaf.com/learn/latex/Hyperlinks
+\usepackage{listings}   % For creating nice-looking code blocks - https://www.overleaf.com/learn/latex/Code_listing
+\usepackage{xcolor}     % For the colours in code - https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
+\usepackage{float}      % For exact table placement with [H]
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{1,1,1}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{AICE1006 Coursework 1}
+\author{Tashifeen Ahmad -- ta6g25@soton.ac.uk}
+\date{17/03/2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents % Reference: https://www.overleaf.com/learn/latex/Table_of_contents
+\newpage
+
+%\section{Notes}
+%\begin{itemize}
+%    \item Be careful importing CSV data into SQLite3. If the table is created \textbf{before} the data is imported then the header row is included in the data unless \texttt{--skip 1} is used to skip the first line. If the table is created implicitly by \texttt{.import} then the header is not included in the relation.
+%    \item Also, be careful when creating the table to define the attributes in the same order as they are listed in the CSV file. If the order is different then the data will not be imported correctly.
+%\end{itemize}
+
+
+
+
+
+
+
+
+
+
+\section{Bash Scripting}
+\subsection{Ex1}
+
+\begin{lstlisting}[language=bash, caption={ex1.sh - XML to CSV conversion}]
+#!/bin/bash
+
+# How to run: ./ex1.sh input.xml output.csv
+
+# STEP 1: INPUT ERROR HANDLING
+xml="$1"
+csv="$2"
+# Checks if (input) arguments are missing
+if [ -z "$xml" ] || [ -z "$csv" ]; then
+    echo "Usage: $0 input.xml output.csv"	# -z -> string is empty (https://linuxsimply.com/bash-scripting-tutorial/conditional-statements/if-else/if-string-not-empty/)
+    exit 1
+fi
+# Check if (input) XML file exists
+if [ ! -f "$xml" ]; then
+    echo "Error: File not found."
+    exit 1
+fi
+
+
+
+## STEP 2: Detecting the Record Tag ##
+# Finding record (<student> or <faculty>) tag
+#	i.e. 2nd opening tag in file
+record=$(grep -oE '<[a-zA-Z][a-zA-Z0-9_]*>' "$xml" \
+         | sed -n '2p' \
+         | sed 's/[<>]//g')
+
+
+
+## STEP 3: Main Processing with gawk ##
+# Passing record tag into gawk
+        # Source: https://medium.com/@redswitches/the-gawk-command-in-linux-with-10-examples-092900b06ca5
+gawk -v rec="$record" '
+	# gawk being used for processing XML structure and generating CSV
+	BEGIN {
+	    RS="<"          # RS = Record Seperator, "<" starts a new chunk
+	    FS=">"          # FS = Field Seperator, Splitting tag and value at ">"
+	    in_rec=0        # Are we inside a record? (e.g. <student>) (0=no, 1=yes)
+	    first=1         # First record -> used for header
+	    depth=0         # Nesting level so <faculty> field inside <faculty> so that the record does not confuse record start/end detection
+	}
+	{
+		# 1. Remove Windows cr characters
+	    gsub(/\r/, "", $0)
+	    tag=$1		# Tag name (e.g. student name)
+	    val=$2		# Tag value (e.g. Michael)
+
+		# 2. Remove whitespaces 
+		# Around tag
+	    gsub(/^[ \t\n]+/, "", tag)
+	    gsub(/[ \t\n]+$/, "", tag)
+	    # Remove newlines inside value (relevant for address tag which spans many lines)
+	    gsub(/\n/, " ", val)
+	    # Skip empty tokens and XML declaration
+	    if (tag == "" || tag ~ /^\?/) next # Source for 'next' cmd: https://opensource.com/article/19/12/control-awk-script
+
+	    # 3. Detect self-closing tag e.g. <lecturer1/> -> empty field, no depth change
+	    if (tag ~ /\/$/) { # Source for '~' cmd: https://man7.org/linux/man-pages/man1/gawk.1.html#:~:text=The%20basic%20idea%20is%20that,ass
+	        if (in_rec) {
+	            field=tag;
+	            gsub(/\/$/, "", field)
+	            if (first) header = (header=="" ? "\"" field "\"" : header ",\"" field "\"")
+	            row = (row=="" ? "\"\"" : row ",\"\"")
+	        }
+	        next
+	    }
+
+	    # 4. Closing tag (e.g. </student>)-> decrement depth, only end record when back at depth 1
+	    if (tag ~ /^\//) {
+	        depth--
+	        if (tag == "/"rec && depth == 1) {
+	            if (first) { print header; first=0 }
+	            print row
+	            in_rec=0
+	        }
+	        next
+	    }
+
+	    # 5. Opening tag (e.g. <student>) -> only start record at depth 1
+	    if (tag == rec && depth == 1) {
+	        in_rec=1; row=""; depth++; next
+	    }
+	    depth++
+
+	    # 6. Field inside record
+	    if (in_rec && tag != "" && tag !~ /^\//) {
+	        # Building header from first record only
+	        if (first) {
+	            if (header == "")
+	                header="\"" tag "\""
+	            else
+	                header=header ",\"" tag "\""
+	        }
+	        val="\"" val "\""
+	        if (row == "")
+	            row=val
+	        else
+	            row=row "," val
+	    }
+	}
+	' "$xml" > "$csv"
+
+echo "Let's go! Output has been written to $csv"
+\end{lstlisting}
+
+\subsubsection{Analysis}
+
+\paragraph{Step 1: Input error handling}
+
+Whilst this is not necessary for the code to run, it is a good programming practice to incorporate some input error handling. Where we enable the script to accept two command-line arguments: an input XML file (\texttt{\$1}) and an output CSV path (\texttt{\$2}) (\texttt{\textbackslash texttt} used throughout for inline code \cite{tutorialspoint_texttt}). So in this step, before any real processing begins, the script performs some input validation where it checks whether either argument is missing using the \texttt{-z} flag \cite{linuxsimply}. Then it checks whether the specified XML file actually exists using \texttt{[ ! -f ]}. In both cases it prints a usage message \cite{stackoverflow_usage} and exits with code 1 \cite{linuxize_exit}, preventing silent failures.
+
+\paragraph{Step 2: Detecting the record tag}
+
+Rather than hardcoding a specific record tag like \texttt{<student>}, the script will instead dynamically detect it through extracting the second opening tag in the file using \texttt{grep -oE} combined with \texttt{sed}. This in turn helps makes the script both more efficient and reusable for different XML files. So in other words this works for both \texttt{students.xml} and \texttt{faculty.xml} without modification.
+
+\paragraph{Step 3: Main processing with gawk}
+
+Now when converting xml to csv. The main processing is handled in a single \texttt{gawk} statement \cite{redswitches_gawk}, which passes the detected record tag as a variable. The approach is to set the record separator to \texttt{<} and the field separator to \texttt{>}, which effectively splits the XML into chunks where each chunk contains a tag name and its value.
+
+The most difficult bug I've encountered during development arose from the \texttt{faculty.xml} file, where the record tag and a field tag share the same name: \texttt{<faculty>}. Without any level of depth tracking, when \texttt{gawk} encountered the \texttt{<faculty>} tag inside a record, it would incorrectly treat it as the start of a new record, immediately closing the current one and corrupting the output. This was particularly hard to debug because the script appeared to work correctly on \texttt{students.xml} where there was no name collision, making the issue invisible until testing on the second file.
+
+The solution was to introduce a \texttt{depth} counter. The script increments \texttt{depth} on every opening tag and decrements it on every closing tag. A new record is only started when the record tag is encountered at depth 1, meaning it is a direct child of the root element. And a record only ends when its closing tag brings the depth back to 1. This means the inner \texttt{<faculty>} field, which is encountered at depth 2, is correctly treated as a field value rather than a record boundary. Without this clear distinction the script would have otherwise produced a completely wrong output for \texttt{faculty.csv}, with rows split in the wrong places and fields misaligned.
+
+As \texttt{gawk} processes each chunk it handles five cases:
+
+\begin{enumerate} % \cite{latex_tutorial_lists}
+    \item Skipping empty tokens and XML declarations
+    \item Handling self-closing tags such as \texttt{<lecturer1/>} as empty fields
+    \item Detecting closing tags to know when a record ends
+    \item Detecting opening tags to know when a record begins
+    \item Collecting field values into a row
+\end{enumerate}
+
+Its important to note that the header is built dynamically from the first record only, then printed before that record's data row. Also, all values are wrapped in double quotes to safely handle fields like \texttt{address} which may contain commas or newlines. Likewise, newlines within values are collapsed to a single space using \texttt{gsub}. The \texttt{next} command \cite{opensource_next} is used to skip to the next record when a condition is met. The \texttt{\textasciitilde} operator \cite{gawk_man} is used for regex matching within \texttt{gawk}.
+
+The resulting CSV has a header row derived from the XML tag names and one data row per record, written directly to the output file via \texttt{>} redirection. Lastly, a confirmation message is printed to the terminal on success!!
+
+\section{Normalisation}
+
+\textit{Note: Throughout this section, please bear in mind that the primary keys are shown as } \textnormal{\textbf{\underline{\texttt{example\_primary\_key}}}} \textit{ and foreign primary keys are shown as \textbf{\underline{\texttt{example\_foreign\_key}}}\textit{. Regular attributes are shown like this} \textnormal{\texttt{example\_non\_key\_attribute}.}}
+
+
+
+
+
+
+
+
+\subsection{Ex2}
+
+When looking through the contents of the csv file. I started my relational model analysis through identifying what each row in each csv file represents, as the ``meaning'' of a row can determine the correct super key and dependencies.
+
+\subsubsection*{R1: students.csv}
+
+The students relation contains the following attributes:
+
+\texttt{student\_id}, \texttt{student\_name}, \texttt{student\_email}, \texttt{programme}, \texttt{year}, \texttt{address}, \texttt{contact}, \texttt{module\_id}, \texttt{module\_name}, \texttt{module\_leader}, \texttt{lecturer1}, \texttt{lecturer2}, \texttt{building}, \texttt{room}, \texttt{faculty\_name}, \texttt{exam\_mark}, \texttt{coursework1}, \texttt{coursework2}, \texttt{coursework3}.
+
+When analysing this relation, 3 functional dependencies can be found. Firstly, a student's ID alone can be used to determine all of their personal details, i.e., their name, email, programme, year, address, and contact information. Similarly, any module ID can be used to determine everything about that module, i.e., its name, leader, lecturers, and the building and room it takes place in. As those 2 keys can be used to determine every attribute in the above relation, a combination of a student ID and a module ID together will be able to determine the student's marks for that module, since a student can only have one set of marks per module.
+
+This gives us a composite primary key of \textbf{(\texttt{student\_id}, \texttt{module\_id})}, as one row represents one student enrolled on one module.
+
+\medskip
+\noindent \textbf{FD1:} % \noindent - Stops automatic indentation which a new header
+
+\begin{itemize}
+    \item{\texttt{\textbf{\underline{student\_id}} $\rightarrow$ student\_name}}
+    \item{\texttt{\textbf{\underline{student\_id}} $\rightarrow$ student\_email}}
+    \item{\texttt{\textbf{\underline{student\_id}} $\rightarrow$ programme}}
+    \item{\texttt{\textbf{\underline{student\_id}} $\rightarrow$ year}}
+    \item{\texttt{\textbf{\underline{student\_id}} $\rightarrow$ address}}
+    \item{\texttt{\textbf{\underline{student\_id}} $\rightarrow$ contact}}
+\end{itemize}
+
+A student ID uniquely identifies a student and their personal details. To verify this FD holds, we can run the following command in bash to check that a particular \texttt{student\_id} should \textbf{not} appear with different student names:
+
+\begin{lstlisting}[language=bash]
+awk -F',' 'NR>1 {print $2","$1}' students.csv | sort | uniq -c
+# Output: NOTHING!!! (This is what we expected)
+\end{lstlisting}
+
+\medskip
+\noindent \textbf{FD2:}
+
+\begin{itemize}
+    \item{\texttt{\textbf{\underline{module\_id}} $\rightarrow$ module\_name}}
+    \item{\texttt{\textbf{\underline{module\_id}} $\rightarrow$ module\_leader}}
+    \item{\texttt{\textbf{\underline{module\_id}} $\rightarrow$ lecturer1}}
+    \item{\texttt{\textbf{\underline{module\_id}} $\rightarrow$ lecturer2}}
+    \item{\texttt{\textbf{\underline{module\_id}} $\rightarrow$ building}}
+    \item{\texttt{\textbf{\underline{module\_id}} $\rightarrow$ room}}
+\end{itemize}
+
+A module ID uniquely identifies module-related information. To verify this FD holds, we can run the following command in bash to check that a particular \texttt{module\_id} should \textbf{not} appear with different module names:
+
+\begin{lstlisting}[language=bash]
+awk -F',' 'NR>1 {print $8","$9}' students.csv | sort | uniq -c
+# Output: NOTHING!!! (This is what we expected)
+\end{lstlisting}
+
+\medskip
+\noindent \textbf{FD3:}
+
+\begin{itemize}
+    \item{\texttt{(\textbf{\underline{student\_id}}, \textbf{\underline{module\_id}}) $\rightarrow$ exam\_mark}}
+    \item{\texttt{(\textbf{\underline{student\_id}}, \textbf{\underline{module\_id}}) $\rightarrow$ coursework1}}
+    \item{\texttt{(\textbf{\underline{student\_id}}, \textbf{\underline{module\_id}}) $\rightarrow$ coursework2}}
+    \item{\texttt{(\textbf{\underline{student\_id}}, \textbf{\underline{module\_id}}) $\rightarrow$ coursework3}}
+\end{itemize}
+
+Marks depend on a specific student taking a specific module. Note: To help prove that we cannot use \texttt{student\_id} or \texttt{module\_id} alone as the FD, we should show that the attribute repeats across multiple rows:
+
+\begin{lstlisting}[language=bash]
+# 1. See if student_id repeats
+cut -d',' -f2 students.csv | sort | uniq -d
+    # Output exists - which shows that students take multiple modules
+    # 1 to many relation
+
+# 2. See if module_id repeats
+cut -d',' -f2 students.csv | sort | uniq -d
+    # Output exists - which shows that students take multiple modules
+    # 1 to many relation
+\end{lstlisting}
+
+\subsubsection*{R2: faculty.csv}
+
+The faculty relation contains the following attributes: \texttt{name}, \texttt{building}, \texttt{room}, and \texttt{capacity}. In simpler terms, we can say that each row represents a single room inside a building, with a faculty name attached.
+
+When analysing the relation, two functional dependencies exist here. The building alone determines the faculty name, since each building belongs to exactly one faculty. Also, the combination of building and room together determines the room's capacity. Although, the room attribute alone cannot be the key because the same room numbers appear across different buildings. Only the pair \textbf{(\texttt{building}, \texttt{room})} uniquely identifies a row, as this satisfies both conditions, making this the primary key.
+
+\medskip
+\noindent \textbf{FD1:}
+
+\begin{itemize}
+    \item{\texttt{\textbf{\underline{building}} $\rightarrow$ name}}
+\end{itemize}
+
+Each building belongs to one faculty name. To verify this FD holds, we can run the following command in bash to check that a particular \texttt{building} should \textbf{not} appear with different names:
+
+\begin{lstlisting}[language=bash]
+awk -F',' 'NR>1 {print $2","$1}' faculty.csv | sort | uniq -c
+# Output: NOTHING!!! (This is what we expected)
+\end{lstlisting}
+
+\medskip
+\noindent \textbf{FD2:}
+
+\begin{itemize}
+    \item{\texttt{(\textbf{\underline{building}}, \textbf{\underline{room}}) $\rightarrow$ capacity}}
+\end{itemize}
+
+Each room in a building has a fixed capacity. To verify this FD holds, we can run the following command in bash to check that the same building+room combination should \textbf{not} appear with different capacities:
+
+\begin{lstlisting}[language=bash]
+awk -F',' 'NR>1 {print $2","$3","$4}' faculty.csv | sort | uniq -c
+# Output: shows each unique (building,room,capacity) combination
+\end{lstlisting}
+
+\medskip
+\noindent \textbf{FD3:}
+
+\begin{itemize}
+    \item{\texttt{(\textbf{\underline{building}}, \textbf{\underline{room}}) $\rightarrow$ name}}
+\end{itemize}
+
+From these, we can derive the above, since \texttt{building} determines \texttt{name}. Note: To help prove FD holds, we should show that there are no duplicate building+room combinations:
+
+\begin{lstlisting}[language=bash]
+awk -F',' 'NR>1 {print $2","$3}' faculty.csv | sort | uniq -d
+# Output: NOTHING!!! (This is what we expected)
+\end{lstlisting}
+
+
+
+
+
+
+
+
+
+\subsection{Ex3}
+
+A relation is in 1NF when every attribute holds a single atomic value and each row is unique \cite{w3schools_sql}.
+
+\subsubsection*{R1 (students.csv)}
+
+The relation ((\texttt{student\_id}, \texttt{module\_id})) satisfies 1NF provided each row shows exactly one student--module enrolment and every field containing a single value. Address can remain as a single text field, it doesn't need to be decomposed further.
+
+\subsubsection*{R2 (faculty.csv)}
+
+Its relation ((\texttt{building}, \texttt{room})) satisfies 1NF, since every attribute is atomic and each row represents one room. Both relations are therefore already in 1NF!!!
+
+
+
+
+
+
+
+
+\subsection{Ex4}
+
+\subsubsection*{R1 (STUDENTS\_CSV)}
+
+R1 has the composite key (\texttt{student\_id}, \texttt{module\_id}). Since student attributes depend only on \texttt{student\_id}, and module attributes depend only on \texttt{module\_id} --- both are partial dependencies. R1 is decomposed into \cite{geeksforgeeks_2nf}:
+
+\begin{itemize}
+    \item \textbf{STUDENT} (\textbf{\underline{\texttt{student\_id}}} PK, \texttt{student\_name}, \texttt{student\_email}, \texttt{programme}, \texttt{year}, \texttt{address}, \texttt{contact})
+    \item \textbf{MODULE} (\textbf{\underline{\texttt{module\_id}}} PK, \texttt{module\_name}, \texttt{module\_leader}, \texttt{lecturer1}, \texttt{lecturer2}, \texttt{name}, \texttt{building}, \texttt{room})
+    \item \textbf{ENROLMENT} (\textbf{\underline{\textit{\texttt{student\_id}}}} PK/FK, \textbf{\underline{\textit{\texttt{module\_id}}}} PK/FK, \texttt{exam\_mark}, \texttt{coursework1}, \texttt{coursework2}, \texttt{coursework3})
+\end{itemize}
+
+After decomposition, every relation has either a single-attribute key (so partial dependency is impossible) or a composite key where all the non-key attributes genuinely depend on the whole key. The schema is now in \textbf{2NF}.
+
+\subsubsection*{R2 (FACULTY\_CSV)}
+
+R2 has the composite key (\texttt{building}, \texttt{room}). Since the attribute \texttt{name} depends only on \texttt{building}, and not on the whole key. This creates a partial dependency. So R2 is decomposed into:
+
+\begin{itemize}
+    \item \textbf{BUILDING} (\textbf{\underline{\texttt{building}}} PK, \texttt{name})
+    \item \textbf{ROOM} (\textbf{\underline{\textit{\texttt{building}}}} PK/FK, \textbf{\underline{\texttt{room}}} PK, \texttt{capacity})
+\end{itemize}
+
+
+
+
+
+
+
+\subsection{Ex5}
+
+After the decompositions above:
+
+\begin{itemize}
+    \item BUILDING has single key $\rightarrow$ 2NF
+    \item ROOM has composite key, but capacity depends on whole key $\rightarrow$ 2NF
+    \item STUDENT single key $\rightarrow$ 2NF
+    \item MODULE single key $\rightarrow$ 2NF
+    \item ENROLMENT composite key, marks depend on whole key $\rightarrow$ 2NF
+\end{itemize}
+
+So the schema is now in \textbf{2NF}.
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Ex6}
+
+A relation is in 3NF when it is in 2NF and no non-key attribute is transitively dependent on the primary key. Which means there is no chain where key $\rightarrow$ non-key $\rightarrow$ non-key \cite{geeksforgeeks_3nf}.
+
+Checking each relation after 2NF decomposition:
+
+\begin{itemize}
+    \item In \textbf{BUILDING}, \texttt{building} $\rightarrow$ \texttt{name} is a direct key-to-non-key dependency. As there is no transitivity, we can ignore this.
+    \item In \textbf{ROOM}, (\texttt{building}, \texttt{room}) $\rightarrow$ \texttt{capacity} is also a direct dependency. Fine.
+    \item In \textbf{STUDENT} and \textbf{ENROLMENT}, all attributes depend directly on their respective keys with no intermediary. Fine.
+    \item In \textbf{MODULE}, there exists a single transitive dependency: \texttt{module\_id} $\rightarrow$ \texttt{building}, \texttt{building} $\rightarrow$ \texttt{name} (from the BUILDING table). This means \texttt{module\_id} $\rightarrow$ \texttt{name} is a transitive dependency. To avoid this, the \texttt{name} attribute should \textbf{not} be stored in MODULE, instead it should only exist in BUILDING. That way, it can be retrieved via a join when needed.
+\end{itemize}
+
+Now all five relations satisfy 3NF.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Modelling}
+\subsection{Ex7}
+
+The final 3NF schema is shown in the tables below \cite{overleaf_crossref}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c}
+\textbf{Attribute} & \textbf{Type} \\\hline
+\textbf{\underline{\texttt{building}}} & TEXT \\
+\texttt{name} & TEXT \\
+\end{tabular}
+\caption{BUILDING}
+\label{tab:building}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c}
+\textbf{Attribute} & \textbf{Type} & \textbf{Constraint} \\\hline
+\textbf{\underline{\textit{\texttt{building}}}} & TEXT & PK, FK $\rightarrow$ BUILDING \\
+\textbf{\underline{\texttt{room}}} & TEXT & PK \\
+\texttt{capacity} & INTEGER & \\
+\end{tabular}
+\caption{ROOM}
+\label{tab:room}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c}
+\textbf{Attribute} & \textbf{Type} \\\hline
+\textbf{\underline{\texttt{student\_id}}} & INTEGER \\
+\texttt{student\_name} & TEXT \\
+\texttt{student\_email} & TEXT \\
+\texttt{programme} & TEXT \\
+\texttt{year} & INTEGER \\
+\texttt{address} & TEXT \\
+\texttt{contact} & TEXT \\
+\end{tabular}
+\caption{STUDENT}
+\label{tab:student}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c}
+\textbf{Attribute} & \textbf{Type} & \textbf{Constraint} \\\hline
+\textbf{\underline{\texttt{module\_id}}} & TEXT & PK \\
+\texttt{module\_name} & TEXT & \\
+\texttt{module\_leader} & TEXT & \\
+\texttt{lecturer1} & TEXT & \\
+\texttt{lecturer2} & TEXT & \\
+\textit{\texttt{building}} & TEXT & FK $\rightarrow$ ROOM \\
+\textit{\texttt{room}} & TEXT & FK $\rightarrow$ ROOM \\
+\end{tabular}
+\caption{MODULE}
+\label{tab:module}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c}
+\textbf{Attribute} & \textbf{Type} & \textbf{Constraint} \\\hline
+\textbf{\underline{\textit{\texttt{student\_id}}}} & INTEGER & PK, FK $\rightarrow$ STUDENT \\
+\textbf{\underline{\textit{\texttt{module\_id}}}} & TEXT & PK, FK $\rightarrow$ MODULE \\
+\texttt{exam\_mark} & INTEGER & \\
+\texttt{coursework1} & INTEGER & \\
+\texttt{coursework2} & INTEGER & \\
+\texttt{coursework3} & INTEGER & \\
+\end{tabular}
+\caption{ENROLMENT}
+\label{tab:enrolment}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+\section{Database Implementation}
+\subsection{Ex8}
+
+\begin{lstlisting}[language=SQL, caption={ex8.sql - Import CSV files into SQLite}]
+.open university.db
+
+.mode csv
+.import students.csv students
+.import faculty_exemplar.csv faculty
+\end{lstlisting}
+
+SQLite's \texttt{.import} was used to create the tables automatically with the CSV headers as column names \cite{stackoverflow_sqlite_import}.
+
+\subsection{Ex9}
+
+\begin{lstlisting}[language=SQL, caption={ex9.sql - Creating and populating the normalised tables}]
+-- Comments in .sql fies: https://www.w3schools.com/sql/sql_comments.asp
+
+-- BUILDING
+CREATE TABLE BUILDING (
+	building TEXT PRIMARY KEY,
+  	name     TEXT NOT NULL -- All buildings have a name!
+);
+INSERT INTO BUILDING (building, name)
+SELECT DISTINCT building, faculty -- https://www.geeksforgeeks.org/sql/sql-distinct-clause/
+FROM faculty;
+
+-- ROOM
+CREATE TABLE ROOM (
+	building  TEXT NOT NULL,
+  	room      TEXT NOT NULL,
+  	capacity  INTEGER,
+  	PRIMARY KEY (building, room),
+  	FOREIGN KEY (building) REFERENCES BUILDING(building) -- https://www.w3schools.com/SQL/sql_ref_foreign_key.asp
+);
+INSERT INTO ROOM (building, room, capacity)
+SELECT DISTINCT building, room, capacity
+FROM faculty;
+
+-- STUDENT
+CREATE TABLE STUDENT (
+	student_id    INTEGER PRIMARY KEY,
+  	student_name  TEXT,
+  	student_email TEXT,
+  	programme     TEXT,
+  	year          INTEGER,
+  	address       TEXT,
+  	contact       TEXT
+);
+INSERT INTO STUDENT (student_id, student_name, student_email, programme, year, address, contact)
+SELECT DISTINCT student_id, student_name, student_email, programme, year, address, contact
+FROM students;
+
+-- MODULE
+CREATE TABLE MODULE (
+	module_id     TEXT PRIMARY KEY,
+  	module_name   TEXT,
+  	module_leader TEXT,
+  	lecturer1     TEXT,
+  	lecturer2     TEXT,
+  	building      TEXT,
+  	room          TEXT,
+  FOREIGN KEY (building, room) REFERENCES ROOM(building, room)
+);
+INSERT INTO MODULE (module_id, module_name, module_leader, lecturer1, lecturer2, building, room)
+SELECT DISTINCT module_id, module_name, module_leader, "lecturer1/", "lecturer2/", building, room
+FROM students;
+
+-- ENROLMENT
+CREATE TABLE ENROLMENT (
+	-- Primary Key cannot be null by definition (Source: https://www.dbvis.com/thetable/can-a-primary-key-be-null-in-an-sql-table/)
+		-- but we're including the 'NOT NULL' just to be safe
+	student_id  INTEGER NOT NULL,
+  	module_id   TEXT NOT NULL,
+  	exam_mark   INTEGER,
+  	coursework1 INTEGER,
+  	coursework2 INTEGER,
+  	coursework3 INTEGER,
+  	PRIMARY KEY (student_id, module_id),
+  	FOREIGN KEY (student_id) REFERENCES STUDENT(student_id),
+  	FOREIGN KEY (module_id)  REFERENCES MODULE(module_id)
+);
+INSERT INTO ENROLMENT (student_id, module_id, exam_mark, coursework1, coursework2, coursework3)
+SELECT DISTINCT student_id, module_id, "exam_mark/", coursework1, coursework2, coursework3
+FROM students;
+\end{lstlisting}
+
+As you can see from the highlighted strings, some attributes such as \texttt{lecturer1}, \texttt{lecturer2}, and \texttt{exam\_mark} appear in the XML as self-closing tags (e.g. \texttt{<lecturer1/>}). This means during parsing (in Ex1), the trailing \texttt{/} becomes part of the extracted tag name, which results in csv column headers containing \texttt{/}. Since \texttt{/} is a special character in SQL, these column names are to be quoted when referenced in queries.
+
+\textbf{Note to self}: SQL comments follow the \texttt{--} syntax \cite{w3schools_comments}. Foreign key constraints \cite{w3schools_fk} link tables together. Primary keys cannot be null by definition \cite{dbvis_pk}, though \texttt{NOT NULL} is included explicitly for clarity. \texttt{DISTINCT} \cite{geeksforgeeks_distinct} prevents duplicate key violations when inserting from the raw tables.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Querying}
+\subsection{Ex10}
+
+\begin{lstlisting}[language=SQL, caption={ex10.sql - Finding total capacity per building}]
+-- Find each building in the university and the total capacity of all rooms it contains
+	-- 'GROUP BY' operation ensures each room capacity sum is calaculated in diffrent buildings (as multiple rooms can be in 1 building)
+	  
+SELECT building, SUM(capacity) AS total_capacity -- Source for 'SUM' operation: https://www.w3schools.com/sql/sql_sum.asp
+FROM ROOM
+GROUP BY building; -- 'GROUP BY vs ORDER BY': https://www.geeksforgeeks.org/sql/difference-between-order-by-and-group-by-clause-in-sql/
+\end{lstlisting}
+
+\textbf{Note to self}: \texttt{SUM()} \cite{w3schools_sum} is used to total the capacity per building. Also, the difference between \texttt{GROUP BY} and \texttt{ORDER BY} \cite{geeksforgeeks_groupby} is important here --- \texttt{GROUP BY} aggregates rows, while \texttt{ORDER BY} sorts results.
+
+\subsection{Ex11}
+
+\begin{lstlisting}[language=SQL, caption={ex11.sql - Year 1 CompSci students by average mark}]
+-- Find each Year 1 Computer Science Student (by id and name) and their average exam mark (sorted in descending order of marks)
+SELECT s.student_id, s.student_name, AVG(e.exam_mark) AS avg_exam_mark
+FROM STUDENT s
+JOIN ENROLMENT e ON s.student_id = e.student_id -- Help: https://www.w3schools.com/sql/sql_join.asp
+WHERE s.year = 1
+AND s.programme = 'Computer Science'
+GROUP BY s.student_id, s.student_name
+ORDER BY avg_exam_mark DESC;
+\end{lstlisting}
+
+\textbf{Note to self}: \texttt{JOIN} \cite{w3schools_join} is used to combine the \texttt{STUDENT} and \texttt{ENROLMENT} tables on the shared \texttt{student\_id} key.
+
+% REFERENCES
+    % Using \begin{thebibliography}
+    
+\begin{thebibliography}{99}
+
+% 1. Bash references
+
+\bibitem{linuxsimply}
+LinuxSimply, \textit{Bash if string not empty}, [Online]. Available: \url{https://linuxsimply.com/bash-scripting-tutorial/conditional-statements/if-else/if-string-not-empty/} [Accessed: March 2026].
+
+\bibitem{linuxize_exit}
+Linuxize, \textit{Bash exit command and exit codes}, [Online]. Available: \url{https://linuxize.com/post/bash-exit/} [Accessed: March 2026].
+
+\bibitem{stackoverflow_usage}
+Stack Overflow, \textit{What is usage() in shell scripting?}, [Online]. Available: \url{https://stackoverflow.com/questions/34567826/what-is-usage-in-shell-scripting} [Accessed: March 2026].
+
+\bibitem{redswitches_gawk}
+RedSwitches, \textit{The gawk command in Linux with 10 examples}, [Online]. Available: \url{https://medium.com/@redswitches/the-gawk-command-in-linux-with-10-examples-092900b06ca5} [Accessed: March 2026].
+
+\bibitem{opensource_next}
+Opensource.com, \textit{Control flow in awk scripts}, [Online]. Available: \url{https://opensource.com/article/19/12/control-awk-script} [Accessed: March 2026].
+
+\bibitem{gawk_man}
+Linux man pages, \textit{gawk(1) --- pattern scanning and processing language}, [Online]. Available: \url{https://man7.org/linux/man-pages/man1/gawk.1.html} [Accessed: March 2026].
+
+% 2. Normalisation references
+
+\bibitem{w3schools_sql}
+W3Schools, \textit{SQL Tutorial}, [Online]. Available: \url{https://www.w3schools.com/sql/} [Accessed: March 2026].
+
+\bibitem{geeksforgeeks_2nf}
+GeeksforGeeks, \textit{Second Normal Form (2NF)}, [Online]. Available: \url{https://www.geeksforgeeks.org/second-normal-form-2nf/} [Accessed: March 2026].
+
+\bibitem{geeksforgeeks_3nf}
+GeeksforGeeks, \textit{Third Normal Form (3NF)}, [Online]. Available: \url{https://www.geeksforgeeks.org/third-normal-form-3nf/} [Accessed: March 2026].
+
+% 3. SQL references
+
+\bibitem{stackoverflow_sqlite_import}
+Stack Overflow, \textit{How to import a .sql or .csv file into SQLite?}, [Online]. Available: \url{https://stackoverflow.com/questions/1045910/how-to-import-load-a-sql-or-csv-file-into-sqlite} [Accessed: March 2026].
+
+\bibitem{w3schools_comments}
+W3Schools, \textit{SQL Comments}, [Online]. Available: \url{https://www.w3schools.com/sql/sql_comments.asp} [Accessed: March 2026].
+
+\bibitem{w3schools_fk}
+W3Schools, \textit{SQL FOREIGN KEY Constraint}, [Online]. Available: \url{https://www.w3schools.com/SQL/sql_ref_foreign_key.asp} [Accessed: March 2026].
+
+\bibitem{geeksforgeeks_distinct}
+GeeksforGeeks, \textit{SQL DISTINCT Clause}, [Online]. Available: \url{https://www.geeksforgeeks.org/sql/sql-distinct-clause/} [Accessed: March 2026].
+
+\bibitem{dbvis_pk}
+DbVisualizer, \textit{Can a Primary Key be NULL in an SQL Table?}, [Online]. Available: \url{https://www.dbvis.com/thetable/can-a-primary-key-be-null-in-an-sql-table/} [Accessed: March 2026].
+
+\bibitem{w3schools_sum}
+W3Schools, \textit{SQL SUM Function}, [Online]. Available: \url{https://www.w3schools.com/sql/sql_sum.asp} [Accessed: March 2026].
+
+\bibitem{geeksforgeeks_groupby}
+GeeksforGeeks, \textit{Difference between ORDER BY and GROUP BY clause in SQL}, [Online]. Available: \url{https://www.geeksforgeeks.org/sql/difference-between-order-by-and-group-by-clause-in-sql/} [Accessed: March 2026].
+
+\bibitem{w3schools_join}
+W3Schools, \textit{SQL JOIN}, [Online]. Available: \url{https://www.w3schools.com/sql/sql_join.asp} [Accessed: March 2026].
+
+% 4. LaTeX based references
+
+\bibitem{tutorialspoint_texttt}
+TutorialsPoint, \textit{LaTeX \textbackslash texttt command}, [Online]. Available: \url{https://www.tutorialspoint.com/tex_commands/texttt.htm} [Accessed: March 2026].
+
+\bibitem{ctan_hyperref}
+CTAN, \textit{hyperref --- Extensive support for hypertext in LaTeX}, [Online]. Available: \url{https://ctan.org/pkg/hyperref} [Accessed: March 2026].
+
+\bibitem{ctan_listings}
+CTAN, \textit{listings --- Typeset source code listings using LaTeX}, [Online]. Available: \url{https://ctan.org/pkg/listings} [Accessed: March 2026].
+
+\bibitem{ctan_xcolor}
+CTAN, \textit{xcolor --- Driver-independent color extensions for LaTeX}, [Online]. Available: \url{https://ctan.org/pkg/xcolor} [Accessed: March 2026].
+
+\bibitem{overleaf_toc}
+Overleaf, \textit{Table of contents}, [Online]. Available: \url{https://www.overleaf.com/learn/latex/Table_of_contents} [Accessed: March 2026].
+
+\bibitem{overleaf_tables}
+Overleaf, \textit{Tables}, [Online]. Available: \url{https://www.overleaf.com/learn/latex/Tables} [Accessed: March 2026].
+
+\bibitem{overleaf_listings}
+Overleaf, \textit{Code listing}, [Online]. Available: \url{https://www.overleaf.com/learn/latex/Code_listing} [Accessed: March 2026].
+
+\bibitem{overleaf_crossref}
+Overleaf, \textit{Cross referencing sections, equations and floats}, [Online]. Available: \url{https://www.overleaf.com/learn/latex/Cross_referencing_sections,_equations_and_floats} [Accessed: March 2026].
+
+\bibitem{overleaf_bibtex}
+Overleaf, \textit{Bibliography management in LaTeX}, [Online]. Available: \url{https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX} [Accessed: March 2026].
+
+\bibitem{latex_tutorial_lists}
+LaTeX Tutorial, \textit{Lists in LaTeX}, [Online]. Available: \url{https://latex-tutorial.com/tutorials/lists/} [Accessed: March 2026].
+
+\bibitem{mit_figtab}
+MIT, \textit{Figures and Tables in LaTeX}, [Online]. Available: \url{https://web.mit.edu/molly/Public/mini/figtab.pdf} [Accessed: March 2026].
+
+\end{thebibliography}
+
+\end{document}
