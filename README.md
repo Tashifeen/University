@@ -1,5 +1,12 @@
 # AICE1008 Mathematics II Coursework
 
+## Summary
+For this coursework, I investigated the SIR epidemic model and explored how numerical methods affect the accuracy of solutions. I first solved the SIR system using SciPy’s odeint and treated it as the reference solution. I then implemented Euler’s method and analysed how its accuracy changes with time resolution by computing peak and average error across different step sizes. This showed how coarse time steps lead to significant numerical deviation.
+
+I extended the model by introducing a dynamic infection rate to simulate behavioural changes such as isolation or lockdowns. Using a fourth differential equation for β, I explored how different suppression rates affect peak infection and epidemic severity. I also implemented the Runge‑Kutta RK4 method as an extension and compared it with Euler and odeint, showing that RK4 provides a much more accurate approximation of the SIR system.
+
+The report demonstrates practical skills in numerical ODE solving, error analysis, model extension, and interpreting epidemic behaviour through simulation.
+
 ## Files
 
 ### Source Files
